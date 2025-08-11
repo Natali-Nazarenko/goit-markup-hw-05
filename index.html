@@ -622,7 +622,114 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="paragraph footer-subscribe-text">Subscribe</p>
+          <form action="">
+            <label for="email"></label>
+            <input id="email" type="email" name="email" placeholder="E-mail" />
+          </form>
+          <button class="footer-button-subscribe" type="submit">
+            Subscribe<svg class="icon-send" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+    <!-- popup -->
+
+    <div class="popup-backdrop">
+      <div class="popup">
+        <button class="popup-close-button" type="button">
+          <svg class="icon-close" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="popup-paragraph paragraph">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="form-popup">
+          <div class="form-item-wrapper">
+            <label class="form-item-label" for="input_name">Name</label>
+            <div class="form-popup-icon-wrapper">
+              <input
+                class="form-item-text-input"
+                id="input_name"
+                name="input_name"
+                type="text"
+              />
+              <svg
+                class="form-popup-icon icon-person"
+                width="18px"
+                height="18px"
+              >
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item-wrapper">
+            <label class="form-item-label" for="input_phone"
+              >Phone number</label
+            >
+            <div class="form-popup-icon-wrapper">
+              <input
+                class="form-item-text-input"
+                id="input_phone"
+                name="input_phone"
+                type="tel"
+              />
+              <svg
+                class="form-popup-icon icon-phone"
+                width="18px"
+                height="24px"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item-wrapper">
+            <label class="form-item-label" for="input-email">E-mail</label>
+            <div class="form-popup-icon-wrapper">
+              <input
+                class="form-item-text-input"
+                id="input-email"
+                name="input-email"
+                type="email"
+              />
+              <svg
+                class="form-popup-icon icon-email"
+                width="18px"
+                height="24px"
+              >
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item-wrapper">
+            <label class="form-item-label" for="input-comment">Comment</label>
+            <textarea
+              class="form-textarea"
+              id="input-comment"
+              name="input-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="input-check"
+              name="input-check"
+            />
+            <label class="agreement" for="input-check"
+              >I accept the terms and conditions of the
+              <a class="privacy-policy">Privacy Policy</a></label
+            >
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
