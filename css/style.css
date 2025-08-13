@@ -602,6 +602,10 @@ a {
   margin-bottom: 8px;
 }
 
+.form-popup > div:nth-child(4) {
+  margin-bottom: 16px;
+}
+
 .form-item-label {
   display: block;
   margin-bottom: 4px;
