@@ -505,7 +505,7 @@ a {
   color: #ffffff;
 }
 
-/* popup */
+/* modal popup */
 
 .popup-backdrop {
   width: 100%;
@@ -514,6 +514,16 @@ a {
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .popup {
